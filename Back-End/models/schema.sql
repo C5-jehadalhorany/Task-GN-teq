@@ -14,5 +14,5 @@ CREATE TABLE user(
     Date_of_Birth(DATE),
     Contract_Start_Date(DATA),
     Contract_End_Date(DATA),
-    Status VARCHAR(255)
+    Status VARCHAR(255),
 );
