@@ -1,7 +1,7 @@
 const connection = require("../../models/db");
 
 const getAllUser = (req, res) => {
-    const query = `select * from user where is_deleted=0;`;
+    const query = `select * from user where is_deleted=0 and status=1;`;
     connection.query(query, (err, result) => {
         if (err) {
             return res.status(500).json({
@@ -26,7 +26,7 @@ const getUserById = (req, res) => {
         if (err) {
             return res.status(500).json({
                 success: false,
-                massage: "Server Error";
+                massage: "Server Error",
                 err: err,
             });
         };
@@ -39,8 +39,9 @@ const getUserById = (req, res) => {
 };
 
 
-module.exports={
-
+module.exports = {
+    getAllUser,
+    getUserById
 }
 
 
