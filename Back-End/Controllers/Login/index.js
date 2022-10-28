@@ -1,4 +1,4 @@
-const connection = require("../models/db");
+const connection = require("../../models/db");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
@@ -53,5 +53,5 @@ const Login = (req, res) => {
 };
 
 module.exports = {
-    Login,
+    Login
 };
