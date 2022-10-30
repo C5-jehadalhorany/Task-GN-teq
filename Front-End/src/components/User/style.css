@@ -1,0 +1,19 @@
+.apple {
+  margin: 0rem 2rem;
+}
+
+.kkk {
+  margin-right: 0.5rem;
+}
+
+h3 {
+  margin: 0.5rem;
+}
+
+.ddd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+}

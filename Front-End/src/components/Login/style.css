@@ -1,0 +1,132 @@
+.loginDiv {
+  width: 100%;
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.815);
+  padding: 30px;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: rgb(25, 107, 173);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.bnnana {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dev {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.loginn {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input1 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+
+  padding: 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.8);
+  color: rgb(25, 107, 173);
+  width: 60%;
+  margin: 1%;
+  margin-left: 20%;
+  border-radius: 7px;
+  border-color: rgb(25, 107, 173);
+}
+.input2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.8);
+  color: rgb(25, 107, 173);
+  width: 60%;
+  margin: 1%;
+  margin-left: 20%;
+  border-radius: 7px;
+  border-color: rgb(25, 107, 173);
+}
+
+.button {
+  background: rgb(25, 107, 173);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  height: 2.5rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .button {
+    background: rgb(25, 107, 173);
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .loginDiv {
+    max-width: 210px;
+    max-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  .loginn {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input1 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(25, 107, 173);
+    width: 80%;
+    margin: 1%;
+    border-radius: 7px;
+    border-color: rgb(25, 107, 173);
+  }
+  .input2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(25, 107, 173);
+    width: 80%;
+    margin: 1%;
+    border-radius: 7px;
+    border-color: rgb(25, 107, 173);
+    justify-self: center;
+  }
+}
