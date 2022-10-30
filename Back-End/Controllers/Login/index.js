@@ -3,9 +3,10 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const Login = (req, res) => {
-    const { Email, password } = req.body;
-    const query = `SELECT * from user WHERE Email=?;`;
-    const data = [Email];
+    const { email, password } = req.body;
+    console.log(req.body);
+    const query = `SELECT * from user WHERE Email=? ;`;
+    const data = [email];
     connection.query(query, data, (err, result) => {
         if (err) throw err;
         if (result.length > 0) {
@@ -17,9 +18,14 @@ const Login = (req, res) => {
                     });
                 }
                 if (response) {
-                    const query = `Update user WHERE Email=?;`;
-                    const data = [Email];
+                    const query = `SELECT * from user WHERE Email=?;`;
+
+
+
+                    const data = [email];
                     connection.query(query, data, (err, result) => {
+
+
                         if (err) {
                             console.log(err);
                         }
@@ -28,6 +34,7 @@ const Login = (req, res) => {
                         Name: result[0].Name,
                         userId: result[0].id,
                         Email: result[0].Email
+                        
                     };
                     const secret = process.env.SECRET;
                     const token = jwt.sign(payload, secret);
@@ -45,9 +52,10 @@ const Login = (req, res) => {
                 };
             });
         } else {
-            res
-                .status(404)
-                .json({ success: false, message: "The email doesn't exist" });
+            res.status(404).json({
+                success: false,
+                message: "The email doesn't exist"
+            });
         };
     });
 };

@@ -11,11 +11,11 @@ CREATE TABLE user(
     Email VARCHAR(255) NOT NULL UNIQUE,
     Country VARCHAR(255),
     City VARCHAR(255),
-    Date_of_Birth(DATE),
-    password VARCHAR(255)
-    Contract_Start_Date(DATE),
-    Contract_End_Date(DATE),
-    Status TINYINT DEFAULT 1 ,
+    Date_of_Birth VARCHAR(255),
+    password VARCHAR(255),
+    Contract_Start_Date VARCHAR(255),
+    Contract_End_Date VARCHAR(255),
+    is_Status VARCHAR(255),
     is_deleted TINYINT DEFAULT 0,
     PRIMARY KEY (id)
 );

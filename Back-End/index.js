@@ -4,15 +4,16 @@ const cors = require("cors");
 require("./models/db");
 const LoginRotuer = require("./routes/Login");
 const RegisterRotuer = require("./routes/Register");
-
+const UserRotuer = require("./routes/user")
 
 
 
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use("login", LoginRotuer);
-app.use("register", RegisterRotuer);
+app.use("/login", LoginRotuer);
+app.use("/register", RegisterRotuer);
+app.use("/user", UserRotuer);
 
 
 

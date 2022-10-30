@@ -16,7 +16,7 @@ const Register = async (req, res) => {
                 err: err,
             })
         };
-        res.status(201).josn({
+        res.status(201).json({
             success: true,
             massage: "Account Created Successfully",
             result: result
